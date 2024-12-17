@@ -69,7 +69,7 @@ jobs:
         run: |
           mvn spring-boot:build-image \
             -Dspring-boot.build-image.imageName=${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ env.VERSION }} \
-            -DskipTests
+            -DskipTests=true
       - name: OCI image vulnerability scanning
         uses: anchore/scan-action@v3
         id: scan
