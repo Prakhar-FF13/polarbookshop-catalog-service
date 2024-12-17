@@ -30,7 +30,7 @@
         <java.version>17</java.version>
         <spring-cloud.version>2024.0.0</spring-cloud.version>
         <testcontainers.version>1.20.4</testcontainers.version>
-        <registryUsername>Prakhar-FF13</registryUsername>
+        <registryUsername>prakhar-ff13</registryUsername>
         <registryToken></registryToken>
         <registryUrl>ghcr.io</registryUrl>
     </properties>
