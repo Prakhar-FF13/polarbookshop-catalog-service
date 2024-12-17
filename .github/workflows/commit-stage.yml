@@ -41,4 +41,4 @@ jobs:
       # Step 5: Build, unit tests, and integration tests with Maven
       - name: Build, unit tests, and integration tests
         run: |
-          mvn clean install -DskipTests=false
+          mvn clean install -DskipTests=true

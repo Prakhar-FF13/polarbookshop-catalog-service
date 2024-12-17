@@ -114,31 +114,6 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>3.4.0</version> <!-- Replace with your Spring Boot version -->
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>build-image</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <image>
-                        <name>${project.artifactId}</name>
-                        <env>
-                            <BP_JVM_VERSION>17.*</BP_JVM_VERSION>
-                        </env>
-                    </image>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>3.4.0</version> <!-- Replace with your Spring Boot version -->
                 <executions>
                     <execution>
                         <goals>
@@ -149,11 +124,11 @@
                 <configuration>
                     <image>
                         <name>ghcr.io/${registryUsername}/${project.artifactId}</name>
-<!--                        <publishRegistry>-->
-<!--                            <username>${registryUsername}</username>-->
-<!--                            <password>${registryToken}</password>-->
-<!--                            <url>${registryUrl}</url>-->
-<!--                        </publishRegistry>-->
+                        <!--                        <publishRegistry>-->
+                        <!--                            <username>${registryUsername}</username>-->
+                        <!--                            <password>${registryToken}</password>-->
+                        <!--                            <url>${registryUrl}</url>-->
+                        <!--                        </publishRegistry>-->
                         <env>
                             <BP_DOCKER_HOST>${registryUrl}</BP_DOCKER_HOST>
                             <BP_JVM_VERSION>17.*</BP_JVM_VERSION>
